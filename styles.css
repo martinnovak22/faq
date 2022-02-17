@@ -1,0 +1,156 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50%;
+  min-height: 50vh;
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.left-side {
+  width: 50%;
+  height: 100%;
+  background-image: url("images/illustration-woman-online-desktop.svg"), url("images/bg-pattern-desktop.svg");
+  background-size: auto, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -80px 60px, -55px 50px;
+}
+
+.left-side img {
+  position: relative;
+  top: 210px;
+  right: 130px;
+}
+
+.right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.faq-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.active .extra-text {
+  display: block;
+}
+
+.active .main-text {
+  font-weight: bold;
+  color: black;
+}
+
+.active .main-text img {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+hr {
+  width: 100%;
+  color: #e7e7e9;
+  opacity: 0.5;
+}
+
+.main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-text:hover {
+  color: #f47c57;
+}
+
+.extra-text {
+  max-height: 200px;
+  max-width: 400px;
+  display: none;
+}
+
+p {
+  color: #787887;
+}
+
+@media only screen and (max-width: 900px) {
+  .flexbox-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    height: 100%;
+  }
+  .right-side {
+    width: 85%;
+    position: relative;
+    top: -60px;
+  }
+  .faq-container {
+    width: 100%;
+  }
+  .faq-container h2 {
+    text-align: center;
+  }
+  .left-side {
+    display: none;
+  }
+  .mobile-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: -100px;
+  }
+  .extra-text {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
