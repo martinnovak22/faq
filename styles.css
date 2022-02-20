@@ -11,7 +11,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .flexbox-container {
@@ -24,7 +24,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 50%;
+  min-width: 60%;
   min-height: 50vh;
   background-color: white;
   border-radius: 15px;
@@ -59,7 +59,7 @@ body {
 }
 
 .faq-container {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +100,14 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-text img {
+  max-height: 7px;
+  padding-left: 20px;
 }
 
 .main-text:hover {
@@ -122,13 +130,13 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 80%;
-    height: 100%;
+    max-width: 80%;
+    max-height: 80%;
   }
   .right-side {
     width: 85%;
     position: relative;
-    top: -60px;
+    top: -100px;
   }
   .faq-container {
     width: 100%;
@@ -146,8 +154,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: relative;
-    top: -100px;
   }
   .extra-text {
     max-width: 100%;
